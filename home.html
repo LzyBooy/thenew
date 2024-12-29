@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蠟筆小新</title>
+    <link rel="stylesheet" href="japan.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* 主區塊的背景色與內邊距設置 */
+        .main {
+            background-color: thistle; /* 背景顏色 */
+            padding: 20px; /* 內邊距 */
+        }
+
+        /* 圖片 hover 特效：旋轉、陰影與邊框 */
+        .peoples img:hover {
+            transition: all 0.3s; /* 定義過渡效果，讓圖片在滑鼠懸停時有平滑的動畫效果 */
+            box-shadow: 6px 4px 6px slategray;/* 加入陰影效果，讓圖片有立體感 */
+            transform: rotateZ(3deg);/* 當滑鼠停住時，圖片會順時針旋轉3度 */
+            border: 5px solid palevioletred; /* 在圖片邊緣加上5px的實線邊框，顏色為淡紫紅 */
+        }
+
+        /* 右側區塊內訊息樣式 */
+        .main_right .msg {
+            text-align: center; /* 設定文字對齊方式為置中 */
+            font-size: 30px;  /* 設定文字大小為30px */
+            color: white; /* 設定文字顏色為白色 */
+            background-color: pink; /* 設定背景顏色為粉紅色 */
+            margin-bottom: 20px; /* 在底部留出20px的外邊距 */
+            padding: 10px; /* 在內部四周空出10px的內邊距 */
+        }
+
+        /* 段落文字 hover 時效果 */
+        .main_right p:hover {
+            transition: all 0.3s; /* 設定所有屬性在0.3秒內過渡，實現平滑效果 */
+            cursor: pointer; /* 當滑鼠懸停時，指標顯示為可點擊的手形 */
+            font-size: 1.4rem; /* 當滑鼠停住時，設定文字大小為1.4rem */  /* 1rem = 16px */
+            color: crimson; /* 當滑鼠停住時，設定文字顏色為深紅色 (crimson) */
+            text-indent: 2em; /* 當滑鼠停住時，設定文字首行縮進2個字元 */ /* 2em = 2 x 當下字體大小 */
+        }
+
+        /* 段落文字的基礎樣式 */
+        .main_right p {
+            font-size: 20px; /* 設定文字大小為20px */
+        }
+
+        /* 整個頁面的背景色與邊框 */
+        body {
+            background-color: ghostwhite; /* 設定整個頁面的背景顏色為淡灰白色（ghostwhite） */
+           border-color:rgb(255,192,203) ; 
+           border-style:solid ;/* 設定整個頁面的邊框為20px寬的粉紅色邊框 */
+           border-width: 0px 20px 20px 20px; /*上 右 下 左*/
+        } 
+    </style>
+</head>
+<body>
+    <!-- 頁首區塊 -->
+    <header>
+        <!-- 橫幅圖片 -->
+        <div class="banner" > 
+            <img src="images/cartoon/banner.jpg" alt="蠟筆小新" class="img-fluid w-100" style="height: 100vh;">
+        </div>
+        
+        <!-- 導覽列 -->
+        <nav class="nav bg-light py-2 px-3 d-flex justify-content-around flex-wrap">
+            <a class="nav-link active" href="home.html">網站首頁</a>
+            <a class="nav-link" href="charactor.html">角色介紹</a>
+            <a class="nav-link" href="picture.html">劇場版</a>
+            <a class="nav-link" href="story.html">劇情介紹</a>
+            <a class="nav-link" href="login.html">聯絡我</a>
+        </nav>
+    </header>
+
+    <!-- 主內容區塊 -->
+    <div class="container my-4">
+        <!-- 標題 -->
+        <h2 class="text-center mb-4">蠟筆小新</h2>
+
+        <!-- 主內容區的兩欄佈局 -->
+        <div class="main row align-items-center">
+            <!-- 左側圖片 -->
+            <div class="col-md-6">
+                <img src="images/cartoon/d5cc418dfeac1768821c809de3d5d25f.jpg" alt="蠟筆小新" class="img-fluid">
+            </div>
+            
+            <!-- 右側文字內容 -->
+            <div class="col-md-6">
+                <div class="main_right">
+                    <!-- 區塊標題 -->
+                    <div class="msg">劇情介紹</div>
+                    
+                    <!-- 文字段落 -->
+                    <p>蠟筆小新（クレヨンしんちゃん）是由日本漫畫家臼井儀人創作的漫畫作品，最初連載於1990年的《周刊漫畫ACTION》雜誌。該作品以其幽默、搞笑且富有生活氣息的內容迅速獲得廣泛人氣，後來改編成動畫、電影及多種衍生作品，成為日本國民級的動漫IP之一。</p>
+                    <p>故事以5歲的野原新之助（小新）為主角，圍繞他的家庭、朋友及日常生活展開。劇情多以輕鬆搞笑的方式呈現，結合了孩子的天真與大人的幽默，描繪出生活中平凡而有趣的瞬間。</p>
+                    <p>動畫版自1992年首播，至今已播出數千集，並且每年推出一部劇場版電影。劇場版通常比電視動畫更注重冒險情節，並融入更多感人元素，深受各年齡層觀眾喜愛。</p>
+                    <p>野原新之助（小新）： 故事的主人公，一名聰明又愛惡作劇的5歲男孩，經常因為搞笑或尷尬的言行讓身邊的人哭笑不得。他最喜歡美少女和吃甜甜圈。</p>
+                    <p>野原美冴： 小新的媽媽，家中的全職主婦。性格堅強，但經常被小新的行為氣得抓狂。</p>
+                    <p>野原廣志： 小新的爸爸，普通的上班族。常因家庭開銷和自己體味（腳臭）被調侃。</p>
+                    <p>野原向日葵： 小新的妹妹，天真可愛，但偶爾會表現出超齡的行為。</p>
+                    <p>小新的朋友們： 包括風間徹、櫻田妮妮、阿呆和正男，他們一起在幼稚園創造許多爆笑故事。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 人物介紹區塊 -->
+    <div class="container my-4">
+        <h2 class="text-center mb-4 ">人物介紹</h2>
+        
+        <!-- 人物圖片橫向排列 -->
+        <div class="peoples d-flex justify-content-start">
+            <img src="images/cartoon/178f7e887af00a01ec333f7287164e52.jpg" alt="人物1" class="img-fluid">
+            <img src="images/cartoon/595363aa666c1bebe1afb654a462978e.jpg" alt="人物2" class="img-fluid">
+            <img src="images/cartoon/0deccd8b474725309803d11963bccba9.jpg" alt="人物3" class="img-fluid">
+            <img src="images/cartoon/a2bc7a4c7e7342ffa2ec737d8d9aaeb3.jpg" alt="人物4" class="img-fluid">
+            <img src="images/cartoon/74f9b84b6f7a03e200130595249b641b.jpg" alt="人物5" class="img-fluid">
+        </div>
+    </div>
+
+    <!-- 頁尾 -->
+    <footer class="bg-light text-center py-3 fs-3">
+        蠟筆小新@版權所有-2024
+    </footer>
+
+    <!-- 引入 Bootstrap 的 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "japan",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "japan"
+	}
+}

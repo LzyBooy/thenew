@@ -1,0 +1,105 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img 
+{
+    object-fit: cover;
+}
+
+/* 主圖片控制: */
+img.banner 
+{
+    width: 100%;
+    height: 50vb;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* 目錄欄位: */
+.nav  
+{
+    width: 100%;
+    height: 80px;
+    line-height: 60px;
+    background-color: pink;
+    display: flex;
+    justify-content: space-around;
+    margin: -3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    justify-content: space-between;
+}
+
+.nav a
+{
+    width: 18%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 24px;
+    color: purple;
+    text-align: center;
+    padding: 8px 12px;
+    flex-shrink: 0;
+    word-break: keep-all;
+    border-radius: 5px;
+    display: flex; /* 垂直與水平居中 */
+    justify-content: center;
+    align-items: center;
+    transform-origin: center; /* 縮放中心點 */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+@media  (max-width: 768px)
+{
+.nav a
+{
+    font-size: 16px;
+    padding: 1px 2px;
+}
+}
+
+.nav a.active
+{
+    background-color: pink;
+    transform: scale(1.1); /* 放大背景與文字 */
+}
+
+.title 
+{
+    width: 20%;
+    height: 80px;
+    line-height: 50px;
+    margin: 60px auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+img:hover
+{
+    transition: all .3s;
+    box-shadow: 6px 4px 6px slategray;
+    cursor: pointer;
+    transform:  rotateZ(3deg);
+    border: 20px solid palevioletred ;
+}
+
+.peoples {
+    background-color: thistle; /* 背景色 */
+    padding: 40px; /* 內距 */
+    display: flex; /* 讓圖片排列在同一行 */
+    justify-content: space-between; /* 平均分布 */
+    align-items: center; /* 垂直居中 */
+}
+
+.peoples img {
+    max-width: 20%; /* 確保每張圖片的寬度不超過背景容器 */
+    height: auto; /* 確保圖片等比例縮放 */
+}
